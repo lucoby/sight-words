@@ -1,0 +1,1 @@
+web: uvicorn sight_words.main:app --host=0.0.0.0 --port=${PORT:-5000}
