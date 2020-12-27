@@ -1,4 +1,9 @@
+aiofiles==0.6.0
 black==20.8b1
 clize==4.1.1
+fastapi==0.63.0
 flake8==3.8.4
+Jinja2==2.11.2
+python-multipart==0.0.5
 reportlab==3.5.56
+uvicorn==0.13.2
