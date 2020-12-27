@@ -12,7 +12,11 @@ Other terms used to describe sight words include: service words, instant words (
 
 This app automates creating slides for teaching sightwords.
 
-![Screenshot of app](static/app.png "Screenshot of sight words app")
+Screenshot of the sight words app:
+
+![Screenshot of app](static/app.png  "Screenshot of sight words app")
+
+Screenshot of the slides (pdf) produced by the sightwords app:
 
 ![Screenshot of slides](static/slides.png "Screenshot of slides produced by the sight words app")
 
