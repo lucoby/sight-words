@@ -22,7 +22,7 @@ async def get_root(request: Request):
 
 
 @app.post("/")
-async def post_root(request: Request, words: str = Form(...)):
+async def post_root(request: Request, title: str = Form(...), subtitle: str = Form(...), words: str = Form(...)):
     words = words.splitlines()
-    filepath = make_pdf(*words)
+    filepath = make_pdf(*words, title=title, subtitle=subtitle)
     return FileResponse(filepath, filename="Sight Words.pdf")
