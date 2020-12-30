@@ -22,12 +22,15 @@ Screenshot of the slides (pdf) produced by the sightwords app:
 
 ## Running the App Locally
 
-Requires python.
+1. Get Merriam-Webster API key and add to `.env`.
 
-```
-pip install -r requirements.txt
-uvicorn sight_words.main:app
-```
+1. Run:
+
+    ```
+    sudo apt-get install poppler-utils ffmppeg
+    pip install -r requirements.txt
+    uvicorn sight_words.main:app
+    ```
 
 ## Using the CLI
 
