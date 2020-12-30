@@ -1,6 +1,6 @@
 from pathlib import Path
 from fastapi import FastAPI, Request, Form
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sight_words.sight_words import make_slides, make_video
@@ -10,6 +10,11 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
+
+
+@app.get("/")
+async def root():
+    return RedirectResponse(app.url_path_for("slides"))
 
 
 @app.get("/heartbeat")
