@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Generate Video</h1>
+<form method="post">
+    <label for="words">Title (optional)</label><br>
+    <input class="form-control" id="title" name="title" placeholder="Title">
+    <label for="words">Subtitle (optional)</label><br>
+    <input class="form-control" id="subtitle" name="subtitle" placeholder="Subtitle">
+    <small id="subtitleHelp" class="form-text text-muted">Title frame is only generated if a title is also
+        included.</small>
+    <label for="words">Words</label><br>
+    <textarea class="form-control" id="words" name="words" rows="10"></textarea><br>
+    <input class="btn btn-primary" type="submit" value="Generate!">
+</form>
+{% endblock %}
